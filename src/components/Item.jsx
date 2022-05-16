@@ -9,14 +9,13 @@ import IconButton from '@mui/material/IconButton';
 import ClearIcon from '@mui/icons-material/Clear';
 import { Paper } from '@mui/material';
 
-export default function Item() {
+export default function Item({ todo, deleteTodo }) {
 
     return (
-        <Paper>
-
+        <Paper style={{ padding: "0.5em 0em" }}>
             <ListItem
                 secondaryAction={
-                    <IconButton edge="end" aria-label="comments">
+                    <IconButton edge="end" aria-label="delete" onClick={() => deleteTodo(todo.id)}>
                         <ClearIcon />
                     </IconButton>
                 }
@@ -30,7 +29,7 @@ export default function Item() {
                             disableRipple
                         />
                     </ListItemIcon>
-                    <ListItemText primary={`Line item`} />
+                    <ListItemText primary={todo.text} />
                 </ListItemButton>
             </ListItem>
         </Paper>

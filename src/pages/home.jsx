@@ -6,18 +6,21 @@ import Item from "../components/Item";
 export default function Home() {
     const [todos, setTodos] = useState([]);
 
-    const todoHandler = (todo) => {
-        console.log(todo);
-        //setTodos([...todos, todo]);
+    const addTodo = (todo) => {
+        setTodos([...todos, todo]);
+    }
+
+    const deleteTodo = (id) => {
+        console.log(id);
     }
 
     return (
         <Container maxWidth="xs" style={{ marginTop: "1em" }}>
-            <Form todoHandler={todoHandler} />
+            <Form addTodo={addTodo} />
             <List sx={{ marginTop: '1em' }}>
-                {todos.map( (todo) => (
-                    <div style={{ marginTop:"1em" }}>
-                        <Item />
+                {todos.map((todo) => (
+                    <div key={todo.id} style={{ marginTop: "1em" }}>
+                        <Item todo={todo} deleteTodo={deleteTodo} />
                     </div>
                 ))}
             </List>

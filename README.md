@@ -1,7 +1,7 @@
 # To do list com React.JS
 
 <div align="center">
-<img width="400em" src="https://c.tenor.com/UHYgSGkjpusAAAAC/anime-read-book.gif"><img width="535em" src="https://2.bp.blogspot.com/-AP9vUhKhHzQ/WHz9OOlXzhI/AAAAAAAAPHg/xE8OIRK2mdgvgvWzxTujz2DV3GDaLxH7wCLcB/s1600/Summer%2BWars%2B%25284%2529.gif">
+<img width="350em" src="https://c.tenor.com/UHYgSGkjpusAAAAC/anime-read-book.gif"><img width="470em" src="https://2.bp.blogspot.com/-AP9vUhKhHzQ/WHz9OOlXzhI/AAAAAAAAPHg/xE8OIRK2mdgvgvWzxTujz2DV3GDaLxH7wCLcB/s1600/Summer%2BWars%2B%25284%2529.gif">
 </div>
 
 ###
